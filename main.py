@@ -11,9 +11,7 @@ dp = Dispatcher()
 
 @dp.message(Command("start"))
 async def commandStartHandler(message: Message):
-    await message.answer("Hello! I'm a bot created with aiogram.")
-
-
+    await message.answer("Привет! Я телеграмм бот который показывает репутацию пользователей")
 
 @dp.my_chat_member()
 async def botStatus(event: ChatMemberUpdated):
