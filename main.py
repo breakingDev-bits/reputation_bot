@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from aiogram.types import Message, ChatMemberUpdated
 # Our import
-from cfg import *
+from mycfg import *
 from tools import *
 
 dp = Dispatcher()

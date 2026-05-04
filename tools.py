@@ -1,7 +1,10 @@
 from datetime import datetime
 from pathlib import Path
+# cfg
+from cfg import LOGS_PATH
 
-logsFile = Path("logs/logs.txt")
+
+logsFile = Path(LOGS_PATH)
 
 async def printAndLog(*args) -> None:
     text = " ".join(map(str, args))
